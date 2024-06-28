@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteo</title>
+    <link rel="stylesheet" href="./src/css/styles.min.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-svg">
+</head>
+<body>
+    <div class="wheel-container">
+        <div class="the_wheel">
+            <div class="triangle"></div>
+            <canvas id='canvas' width='600' height='600'>
+                Canvas not supported, use another browser.
+            </canvas>
+        </div>
+        <button class="start-button" id="btn-start" onclick="startRoulette(this)">INICIAR</button>
+    </div>
+    <div class="random-container hidden">
+        <div class="number">
+            <h5 id="counting">10</h5>
+            <p class="winner"></p>
+        </div>
+        <div class="loading"></div>
+        <div class="loading_back"></div>
+        <!-- <button class="start-button" id="btn-count" onclick="startCounting(this)">INICIAR</button> -->
+    </div>
+    <div class="winner-container hidden">
+        <div class="winner">
+            <h1>¡¡¡FELICIDADES!!!</h1>
+            <h2 id="winner-name">MIGUEL ANGEL GONZÁLEZ DE LA ROSA</h2>
+            <br><br>
+            <div class="award">
+                <p>PREMIO</p>
+                <h3 id="winner-award">GOOGLE HOME MINI</h3>
+            </div>
+        </div>
+        <div class="buttons-winner-container">
+            <button class="confirm-winner-button" id="btn-confirm-winner" onclick="confirmWinner()">RULETEAR NUEVAMENTE</button>
+            <button class="end-lottery-button" id="btn-end-lottery" onclick="endLottery()">FINALIZAR SORTEO</button>
+        </div>
+    </div>
+    <form></form>
+
+    <script src="./src/js/app.js"></script>
+    <script src="./src/js/winwheel/Winwheel.min.js"></script>
+    <script src="./src/js/winwheel/TweenMax.min.js"></script>
+    <script src="./src/js/lottery.js"></script>
+    <script src="./src/js/confetii/confetti.browser.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteo</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-svg">
+    <link rel="stylesheet" href="./src/css/styles.min.css">
+</head>
+<body>
+    <main>
+        <h1>REGISTRO DE PARTICIPANTES</h1>
+        <section id="participants-section">
+            <article>
+                <form id="form-competitor">
+                    <div class="form-group">
+                        <input class="form-input" type="text" id="competitor" placeholder="Ingresa el nombre / apodo del participante" autocomplete="off">
+                        <button class="form-button">Agregar</button>
+                    </div>
+                </form>
+                <ul class="list" id="list-of-competitors">
+                </ul>
+                <button class="continue-button" id="btn-competitors" disabled>CONTINUAR</button>
+            </article>
+        </section>
+    </main>
+
+    <script src="./src/js/app.js"></script>
+    <script src="./src/js/registerCompetitors.js"></script>
+</body>
+</html>

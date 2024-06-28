@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteo</title>
+    <link rel="stylesheet" href="./src/css/styles.min.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-svg">
+</head>
+<body>
+    <main>
+        <h1>GANADORES</h1>
+        <section id="winners-section">
+            <article>
+                <table id="winner-table">
+                    <thead>
+                        <tr>
+                            <th>Competidor</th>
+                            <th>Premio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="winner-table-body">
+                    </tbody>
+                </table>
+                <button class="continue-button" id="btn-restart">REINCIAR SORTEO</button>
+            </article>
+        </section>
+    </main>
+    <div class="alert hidden">
+        <div class="alert-container">
+            <div class="alert-body">
+                <p>¿Seguro de reinicar el sorteo?</p>
+            </div>
+            <div class="alert-footer">
+                <button class="btn-cancel" id="btn-cancel-reset">Cancelar</button>
+                <button class="btn-confirm" id="btn-reset">Confirmar</button>
+            </div>
+        </div>
+    </div>
+    <form></form>
+
+    <script src="./src/js/app.js"></script>
+    <script src="./src/js/finished.js"></script>
+</body>
+</html>
