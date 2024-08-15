@@ -1,5 +1,7 @@
 # Sistema de Sorteos
 
+Link de la vista previa funcional: https://iscmiguelangel.github.io/sorteos/
+
 Este sistema de sorteos es una aplicación sencilla que permite gestionar y realizar sorteos de manera fácil y visualmente atractiva. El sistema consta de cuatro pasos (pantallas):
 
 1. **Registro de Participantes**: Permite registrar a los participantes del sorteo.
